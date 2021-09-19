@@ -17,9 +17,11 @@ namespace System.Device.Pwm
         [System.Diagnostics.DebuggerBrowsable(System.Diagnostics.DebuggerBrowsableState.Never)]
         private uint _dutyCycle;
 
+        #pragma warning disable 0414
         [System.Diagnostics.DebuggerBrowsable(System.Diagnostics.DebuggerBrowsableState.Never)]
         private PwmPulsePolarity _polarity;
-        
+        #pragma warning restore 0414
+
         [System.Diagnostics.DebuggerBrowsable(System.Diagnostics.DebuggerBrowsableState.Never)]
         private int _pinNumber;
 
@@ -165,7 +167,7 @@ namespace System.Device.Pwm
         #region external calls to native implementations
 
         [MethodImpl(MethodImplOptions.InternalCall)]
-        private extern bool NativeInit();
+        private extern void NativeInit();
 
         [MethodImpl(MethodImplOptions.InternalCall)]
         private extern uint NativeSetDesiredFrequency(uint desiredFrequency);
