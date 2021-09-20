@@ -10,8 +10,8 @@
 
 | Component | Build Status | NuGet Package |
 |:-|---|---|
-| System.Device.Pwm | [![Build Status](https://dev.azure.com/nanoframework/System.Device.Pwm/_apis/build/status/nanoframework.lib-System.Device.Pwm?branchName=develop)](https://dev.azure.com/nanoframework/System.Device.Pwm/_build/latest?definitionId=8?branchName=main) | [![NuGet](https://img.shields.io/nuget/v/nanoFramework.System.Device.Pwm.svg?label=NuGet&style=flat&logo=nuget)](https://www.nuget.org/packages/nanoFramework.System.Device.Pwm/) |
-| System.Device.Pwm (preview) | [![Build Status](https://dev.azure.com/nanoframework/System.Device.Pwm/_apis/build/status/nanoframework.lib-System.Device.Pwm?branchName=develop)](https://dev.azure.com/nanoframework/System.Device.Pwm/_build/latest?definitionId=8?branchName=develop) | [![NuGet](https://img.shields.io/nuget/vpre/nanoFramework.System.Device.Pwm.svg?label=NuGet&style=flat&logo=nuget)](https://www.nuget.org/packages/nanoFramework.System.Device.Pwm/) |
+| System.Device.Pwm | [![Build Status](https://dev.azure.com/nanoframework/System.Device.Pwm/_apis/build/status/nanoframework.System.Device.Pwm?branchName=develop)](https://dev.azure.com/nanoframework/System.Device.Pwm/_build/latest?definitionId=77&branchName=main) | [![NuGet](https://img.shields.io/nuget/v/nanoFramework.System.Device.Pwm.svg?label=NuGet&style=flat&logo=nuget)](https://www.nuget.org/packages/nanoFramework.System.Device.Pwm/) |
+| System.Device.Pwm (preview) | [![Build Status](https://dev.azure.com/nanoframework/System.Device.Pwm/_apis/build/status/nanoframework.System.Device.Pwm?branchName=develop)](https://dev.azure.com/nanoframework/System.Device.Pwm/_build/latest?definitionId=77&branchName=develop) | [![NuGet](https://img.shields.io/nuget/vpre/nanoFramework.System.Device.Pwm.svg?label=NuGet&style=flat&logo=nuget)](https://www.nuget.org/packages/nanoFramework.System.Device.Pwm/) |
 
 ## Feedback and documentation
 
