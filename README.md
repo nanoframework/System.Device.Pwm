@@ -13,6 +13,48 @@
 | System.Device.Pwm | [![Build Status](https://dev.azure.com/nanoframework/System.Device.Pwm/_apis/build/status/nanoframework.System.Device.Pwm?branchName=develop)](https://dev.azure.com/nanoframework/System.Device.Pwm/_build/latest?definitionId=77&branchName=main) | [![NuGet](https://img.shields.io/nuget/v/nanoFramework.System.Device.Pwm.svg?label=NuGet&style=flat&logo=nuget)](https://www.nuget.org/packages/nanoFramework.System.Device.Pwm/) |
 | System.Device.Pwm (preview) | [![Build Status](https://dev.azure.com/nanoframework/System.Device.Pwm/_apis/build/status/nanoframework.System.Device.Pwm?branchName=develop)](https://dev.azure.com/nanoframework/System.Device.Pwm/_build/latest?definitionId=77&branchName=develop) | [![NuGet](https://img.shields.io/nuget/vpre/nanoFramework.System.Device.Pwm.svg?label=NuGet&style=flat&logo=nuget)](https://www.nuget.org/packages/nanoFramework.System.Device.Pwm/) |
 
+## Usage
+
+You can create a PWM channel from a pin number, this is the recommended way. Keep in mind, you will have to allocate the pin in the case of ESP32 and make sure your pin is PWM enabled for STM32 devices.
+
+```csharp
+// Case of ESP32, you need to set the pin function, in this example PWM3 for pin 18:
+Configuration.SetPinFunction(18, DeviceFunction.PWM3);
+PwmChannel pwmPin = PwmChannel.CreateFromPin(18, 40000);
+// You can check then if it has created a valid one:
+if (pwmPin != null)
+{
+    // You do have a valid one
+}
+```
+### Duty cycle
+
+You can adjust the duty cycle by using the property:
+
+```csharp
+pwmPin.DutyCycle = 0.42;
+```
+
+The duty cycle goes from 0.0 to 1.0.
+
+### Frequency
+
+It is recommended to setup the frequency when creating the PWM Channel. You can technically change it at any time but keep in mind some platform may not behave properly when adjusting this element.
+
+### Advance PwmChannel creation
+
+You can as well, if you know the chip/timer Id and the channel use the create function:
+
+```csharp
+PwmChannel pwmPin = new(1, 2, 40000, 0.5);
+```
+
+This is only recommended for advance users.
+
+### Other considerations
+
+PWM precision may vary from platform to platform. It is highly recommended to check what precision can be achieved, either with the frequency, either with the duty cycle.
+
 ## Feedback and documentation
 
 For documentation, providing feedback, issues and finding out how to contribute please refer to the [Home repo](https://github.com/nanoframework/Home).
