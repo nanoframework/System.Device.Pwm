@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RuleSet Name="SonarQube - nanoframework_System.Device.Pwm Sonar way (.NET nanoFramework)" ToolsVersion="16.0">
+  <Include Path="..\..\nf-samples\samples\pwm\system.device.pwm\.sonarlint\nanoframework_system.device.pwmcsharp.ruleset" Action="Default" />
+  <Include Path="..\.sonarlint\nanoframework_system.device.pwmcsharp.ruleset" Action="Default" />
+</RuleSet>

@@ -32,6 +32,7 @@
     <NF_GenerateStubsDirectory>bin\$(Configuration)\Stubs</NF_GenerateStubsDirectory>
     <NF_GenerateSkeletonProjectName>sys_dev_pwm_native</NF_GenerateSkeletonProjectName>
     <Name>System.Device.Pwm</Name>
+    <CodeAnalysisRuleSet>System.Device.Pwm.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <ItemGroup>
     <NFMDP_PE_ExcludeClassByName Include="ThisAssembly">
@@ -54,6 +55,9 @@
       <Private>True</Private>
       <SpecificVersion>True</SpecificVersion>
     </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <AdditionalFiles Include="..\.sonarlint\nanoframework_system.device.pwm\CSharp\SonarLint.xml" Link="SonarLint.xml" />
   </ItemGroup>
   <Import Project="$(NanoFrameworkProjectSystemPath)NFProjectSystem.CSharp.targets" Condition="Exists('$(NanoFrameworkProjectSystemPath)NFProjectSystem.CSharp.targets')" />
   <ProjectExtensions>
