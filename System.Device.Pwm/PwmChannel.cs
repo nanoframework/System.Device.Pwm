@@ -17,10 +17,10 @@ namespace System.Device.Pwm
         [System.Diagnostics.DebuggerBrowsable(System.Diagnostics.DebuggerBrowsableState.Never)]
         private uint _dutyCycle;
 
-        #pragma warning disable 0414
+#pragma warning disable 0414
         [System.Diagnostics.DebuggerBrowsable(System.Diagnostics.DebuggerBrowsableState.Never)]
         private PwmPulsePolarity _polarity;
-        #pragma warning restore 0414
+#pragma warning restore 0414
 
         [System.Diagnostics.DebuggerBrowsable(System.Diagnostics.DebuggerBrowsableState.Never)]
         private int _pinNumber;
@@ -81,10 +81,10 @@ namespace System.Device.Pwm
         }
 
         /// <summary>
-        /// Creates a new instance of the <see cref="PwmChannel"/> running on the current platform. (Windows 10 IoT or Unix/Raspbian)
+        /// Creates a new instance of the <see cref="PwmChannel"/> running on the current platform.
         /// </summary>
-        /// <param name="chip">The PWM chip number.</param>
-        /// <param name="channel">The PWM channel number.</param>
+        /// <param name="chip">The PWM chip number, formally known as TIM channel.</param>
+        /// <param name="channel">The PWM pin number or channel number depending on your platform.</param>
         /// <param name="frequency">The frequency in hertz.</param>
         /// <param name="dutyCyclePercentage">The duty cycle percentage represented as a value between 0.0 and 1.0.</param>
         /// <returns>A PWM channel</returns>
@@ -99,15 +99,44 @@ namespace System.Device.Pwm
         }
 
         /// <summary>
-        /// Creates a new instance of the <see cref="PwmChannel"/> running on the current platform. (Windows 10 IoT or Unix/Raspbian)
+        /// Creates a PwmChannel from a pin number.
         /// </summary>
-        /// <param name="chip">The PWM chip number.</param>
-        /// <param name="channel">The PWM channel number.</param>
+        /// <param name="pin">The pin number.</param>
+        /// <param name="frequency">The frequency in hertz.</param>
+        /// <param name="dutyCyclePercentage">The duty cycle percentage represented as a value between 0.0 and 1.0.</param>
+        /// <returns>A PWM channel</returns>
+        public static PwmChannel CreateFromPin(int pin, int frequency = 400, double dutyCyclePercentage = 0.5)
+        {
+            int channel = -1;
+            int chip;
+            // We do have a channels from 0 to 8
+            for (chip = 0; chip < 8; chip++)
+            {
+                channel = GetChannel(pin, chip);
+                if (channel != -1)
+                {
+                    break;
+                }
+            }
+
+            if (channel == -1)
+            {
+                return null;
+            }
+
+            return new PwmChannel(chip, channel, frequency, dutyCyclePercentage);
+        }
+
+        /// <summary>
+        /// Creates a new instance of the <see cref="PwmChannel"/> running on the current platform.
+        /// </summary>
+        /// <param name="chip">The PWM chip number, formally known as TIM channel.</param>
+        /// <param name="channel">The PWM pin number or channel number depending on your platform.</param>
         /// <param name="frequency">The frequency in hertz.</param>
         /// <param name="dutyCyclePercentage">The duty cycle percentage represented as a value between 0.0 and 1.0.</param>
         /// <returns>A PWM channel</returns>
         public PwmChannel(
-        int chip,
+            int chip,
             int channel,
             int frequency = 400,
             double dutyCyclePercentage = 0.5)
@@ -147,13 +176,6 @@ namespace System.Device.Pwm
             }
         }
 
-        // // TODO: override finalizer only if 'Dispose(bool disposing)' has code to free unmanaged resources
-        // ~PwmChannel()
-        // {
-        //     // Do not change this code. Put cleanup code in 'Dispose(bool disposing)' method
-        //     Dispose(disposing: false);
-        // }
-
         /// <inheritdoc cref="IDisposable.Dispose"/>
         public void Dispose()
         {
@@ -183,6 +205,10 @@ namespace System.Device.Pwm
 
         [MethodImpl(MethodImplOptions.InternalCall)]
         private extern void DisposeNative();
+
+        [MethodImpl(MethodImplOptions.InternalCall)]
+        private static extern int GetChannel(int pin, int timerId);
+
         #endregion
     }
 }
