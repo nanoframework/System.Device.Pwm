@@ -2,7 +2,15 @@
 
 ## [**Changes available only in 'Preview' NuGet packages:**](https://github.com/nanoframework/System.Device.Pwm/tree/HEAD)
 
-[Full Changelog](https://github.com/nanoframework/System.Device.Pwm/compare/v1.0.0-preview.10...HEAD)
+[Full Changelog](https://github.com/nanoframework/System.Device.Pwm/compare/v1.0.0-preview.12...HEAD)
+
+**Implemented enhancements:**
+
+- Rework PwmChannel [\#2](https://github.com/nanoframework/System.Device.Pwm/pull/2)
+
+## [v1.0.0-preview.12](https://github.com/nanoframework/System.Device.Pwm/tree/v1.0.0-preview.12) (2021-09-20)
+
+[Full Changelog](https://github.com/nanoframework/System.Device.Pwm/compare/v1.0.0-preview.10...v1.0.0-preview.12)
 
 **Implemented enhancements:**
 
