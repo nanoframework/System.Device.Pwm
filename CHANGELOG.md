@@ -2,7 +2,15 @@
 
 ## [**Changes available only in 'Preview' NuGet packages:**](https://github.com/nanoframework/System.Device.Pwm/tree/HEAD)
 
-[Full Changelog](https://github.com/nanoframework/System.Device.Pwm/compare/v1.0.0-preview.12...HEAD)
+[Full Changelog](https://github.com/nanoframework/System.Device.Pwm/compare/v1.0.0-preview.14...HEAD)
+
+**Documentation and other chores:**
+
+- Bumps nanoFramework.CoreLibrary from 1.10.5 to 1.11.6-preview.2 [\#4](https://github.com/nanoframework/System.Device.Pwm/pull/4)
+
+## [v1.0.0-preview.14](https://github.com/nanoframework/System.Device.Pwm/tree/v1.0.0-preview.14) (2021-09-21)
+
+[Full Changelog](https://github.com/nanoframework/System.Device.Pwm/compare/v1.0.0-preview.12...v1.0.0-preview.14)
 
 **Implemented enhancements:**
 
