@@ -1,8 +1,8 @@
 # Changelog
 
-## [**Changes available only in 'Preview' NuGet packages:**](https://github.com/nanoframework/System.Device.Pwm/tree/HEAD)
+## [v1.0.0-preview.20](https://github.com/nanoframework/System.Device.Pwm/tree/v1.0.0-preview.20) (2021-12-02)
 
-[Full Changelog](https://github.com/nanoframework/System.Device.Pwm/compare/v1.0.0-preview.18...HEAD)
+[Full Changelog](https://github.com/nanoframework/System.Device.Pwm/compare/v1.0.0-preview.18...v1.0.0-preview.20)
 
 **Documentation and other chores:**
 
