@@ -2,7 +2,15 @@
 
 ## [**Changes available only in 'Preview' NuGet packages:**](https://github.com/nanoframework/System.Device.Pwm/tree/HEAD)
 
-[Full Changelog](https://github.com/nanoframework/System.Device.Pwm/compare/v1.0.1-preview.8...HEAD)
+[Full Changelog](https://github.com/nanoframework/System.Device.Pwm/compare/v1.0.1-preview.11...HEAD)
+
+**Documentation and other chores:**
+
+- Update 1 NuGet dependencies [\#11](https://github.com/nanoframework/System.Device.Pwm/pull/11)
+
+## [v1.0.1-preview.11](https://github.com/nanoframework/System.Device.Pwm/tree/v1.0.1-preview.11) (2022-03-14)
+
+[Full Changelog](https://github.com/nanoframework/System.Device.Pwm/compare/v1.0.1-preview.8...v1.0.1-preview.11)
 
 **Documentation and other chores:**
 
