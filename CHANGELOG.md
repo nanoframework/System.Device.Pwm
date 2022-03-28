@@ -1,5 +1,9 @@
 # Changelog
 
+## [v1.0.1](https://github.com/nanoframework/System.Device.Pwm/tree/v1.0.1) (2022-03-28)
+
+[Full Changelog](https://github.com/nanoframework/System.Device.Pwm/compare/v1.0.1-preview.15...v1.0.1)
+
 ## [v1.0.1-preview.15](https://github.com/nanoframework/System.Device.Pwm/tree/v1.0.1-preview.15) (2022-03-28)
 
 [Full Changelog](https://github.com/nanoframework/System.Device.Pwm/compare/v1.0.1-preview.13...v1.0.1-preview.15)
