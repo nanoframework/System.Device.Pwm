@@ -2,6 +2,58 @@
 
 ## [v1.0.0-preview.20](https://github.com/nanoframework/System.Device.Pwm/tree/v1.0.0-preview.20) (2021-12-02)
 
+[Full Changelog](https://github.com/nanoframework/System.Device.Pwm/compare/v1.0.1-preview.13...HEAD)
+
+**Documentation and other chores:**
+
+- Update 1 NuGet dependencies [\#12](https://github.com/nanoframework/System.Device.Pwm/pull/12)
+
+## [v1.0.1-preview.13](https://github.com/nanoframework/System.Device.Pwm/tree/v1.0.1-preview.13) (2022-03-17)
+
+[Full Changelog](https://github.com/nanoframework/System.Device.Pwm/compare/v1.0.1-preview.11...v1.0.1-preview.13)
+
+**Documentation and other chores:**
+
+- Update 1 NuGet dependencies [\#11](https://github.com/nanoframework/System.Device.Pwm/pull/11)
+
+## [v1.0.1-preview.11](https://github.com/nanoframework/System.Device.Pwm/tree/v1.0.1-preview.11) (2022-03-14)
+
+[Full Changelog](https://github.com/nanoframework/System.Device.Pwm/compare/v1.0.1-preview.8...v1.0.1-preview.11)
+
+**Documentation and other chores:**
+
+- Update 1 NuGet dependencies [\#10](https://github.com/nanoframework/System.Device.Pwm/pull/10)
+
+## [v1.0.1-preview.8](https://github.com/nanoframework/System.Device.Pwm/tree/v1.0.1-preview.8) (2022-02-17)
+
+[Full Changelog](https://github.com/nanoframework/System.Device.Pwm/compare/v1.0.1-preview.6...v1.0.1-preview.8)
+
+**Documentation and other chores:**
+
+- Update 1 NuGet dependencies [\#9](https://github.com/nanoframework/System.Device.Pwm/pull/9)
+
+## [v1.0.1-preview.6](https://github.com/nanoframework/System.Device.Pwm/tree/v1.0.1-preview.6) (2022-01-28)
+
+[Full Changelog](https://github.com/nanoframework/System.Device.Pwm/compare/v1.0.1-preview.4...v1.0.1-preview.6)
+
+**Documentation and other chores:**
+
+- Update 1 NuGet dependencies [\#8](https://github.com/nanoframework/System.Device.Pwm/pull/8)
+
+## [v1.0.1-preview.4](https://github.com/nanoframework/System.Device.Pwm/tree/v1.0.1-preview.4) (2022-01-21)
+
+[Full Changelog](https://github.com/nanoframework/System.Device.Pwm/compare/v1.0.0...v1.0.1-preview.4)
+
+**Documentation and other chores:**
+
+- Update 1 NuGet dependencies [\#7](https://github.com/nanoframework/System.Device.Pwm/pull/7)
+
+## [v1.0.0](https://github.com/nanoframework/System.Device.Pwm/tree/v1.0.0) (2021-12-02)
+
+[Full Changelog](https://github.com/nanoframework/System.Device.Pwm/compare/v1.0.0-preview.20...v1.0.0)
+
+## [v1.0.0-preview.20](https://github.com/nanoframework/System.Device.Pwm/tree/v1.0.0-preview.20) (2021-12-02)
+
 [Full Changelog](https://github.com/nanoframework/System.Device.Pwm/compare/v1.0.0-preview.18...v1.0.0-preview.20)
 
 **Documentation and other chores:**
