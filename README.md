@@ -26,6 +26,7 @@ if (pwmPin != null)
     // You do have a valid one
 }
 ```
+
 ### Duty cycle
 
 You can adjust the duty cycle by using the property:
@@ -40,7 +41,7 @@ The duty cycle goes from 0.0 to 1.0.
 
 It is recommended to setup the frequency when creating the PWM Channel. You can technically change it at any time but keep in mind some platform may not behave properly when adjusting this element.
 
-### Advance PwmChannel creation
+### Advanced PWM channel creation
 
 You can as well, if you know the chip/timer Id and the channel use the create function:
 
@@ -73,6 +74,6 @@ The **nanoFramework** Class Libraries are licensed under the [MIT license](LICEN
 This project has adopted the code of conduct defined by the Contributor Covenant to clarify expected behaviour in our community.
 For more information see the [.NET Foundation Code of Conduct](https://dotnetfoundation.org/code-of-conduct).
 
-### .NET Foundation
+## .NET Foundation
 
 This project is supported by the [.NET Foundation](https://dotnetfoundation.org).
