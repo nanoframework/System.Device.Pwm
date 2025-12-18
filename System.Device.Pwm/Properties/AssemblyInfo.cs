@@ -13,7 +13,7 @@ using System.Runtime.InteropServices;
 /////////////////////////////////////////////////////////////////
 // This attribute is mandatory when building Interop libraries //
 // update this whenever the native assembly signature changes  //
-[assembly: AssemblyNativeVersion("100.1.0.4")]
+[assembly: AssemblyNativeVersion("100.2.0.0")]
 
 /////////////////////////////////////////////////////////////////
 // Setting ComVisible to false makes the types in this assembly not visible 
