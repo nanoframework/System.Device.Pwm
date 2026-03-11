@@ -19,18 +19,16 @@
 This package requires a target with nanoFramework.System.Device.Pwm v$nativeVersion$ (checksum $checksum$).</description>
     <tags>nanoFramework C# csharp netmf netnf nanoFramework pwm</tags>
     <dependencies>
-      <dependency id="nanoFramework.CoreLibrary" version="2.0.0-preview.35" />
+      <group targetFramework=".NETnanoFramework1.0">
+        <dependency id="nanoFramework.CoreLibrary" version="2.0.0-preview.35" />
+      </group>
     </dependencies>
   </metadata>
   <files>
-    <file src="System.Device.Pwm\bin\Release\System.Device.Pwm.dll" target="lib\System.Device.Pwm.dll" />
-    <file src="System.Device.Pwm\bin\Release\System.Device.Pwm.pdb" target="lib\System.Device.Pwm.pdb" />
-    <file src="System.Device.Pwm\bin\Release\System.Device.Pwm.pdbx" target="lib\System.Device.Pwm.pdbx" />
-    <file src="System.Device.Pwm\bin\Release\System.Device.Pwm.pe" target="lib\System.Device.Pwm.pe" />
-    <file src="System.Device.Pwm\bin\Release\System.Device.Pwm.xml" target="lib\System.Device.Pwm.xml" />
-    <file src="assets\readme.txt" target="" />
     <file src="README.md" target="docs\" />
-    <file src="assets\nf-logo.png" target="images" />
+    <file src="assets\readme.txt" target="" />
     <file src="LICENSE.md" target="" />
+    <file src="assets\nf-logo.png" target="images" />
+    <file src="System.Device.Pwm\bin\Release\System.Device.Pwm.*" target="lib\netnano1.0" />
   </files>
 </package>
